@@ -7,7 +7,7 @@ def display_board(board)
 end
 
 def input_to_index(input)
-  index = input - 1
+  index = input.to_i - 1
 end
 
 def position_taken?(board, index)
@@ -25,3 +25,10 @@ def valid_move?(board, index)
     return false
   end
 end
+
+def move(board, index, token = "X")
+  board[index] = token
+end
+
+
+  
